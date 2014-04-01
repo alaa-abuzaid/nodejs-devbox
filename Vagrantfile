@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :private_network, ip: "192.168.77.77" 
 
   config.vm.provider :virtualbox do |vb|
-    vb.name = "nodejs-Ubuntu_64"
+    vb.name = "node devbox"
     vb.customize ["modifyvm", :id, "--memory", "2048"]
     vb.customize ["modifyvm", :id, "--ostype", "Ubuntu_64"]
   end
@@ -19,8 +19,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", inline: <<-shell
     apt-get install python-software-properties  -y --force-yes
     apt-get install screen vim -y --force-yes
+
+    add-apt-repository ppa:chris-lea/node.js
     apt-get update
-    apt-get install nodejs  -y --force-yes
+    apt-get install python g++ make nodejs -y --force-yes
+
+    apt-get install npm -y --force-yes
+    
     # node /vagrant/opt/hello/server.js
   shell
 end
