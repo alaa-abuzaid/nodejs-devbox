@@ -1,4 +1,4 @@
-Nodejs Vagrant box
+Nodejs devbox
 ================
 
 Ubuntu Precise box simply installing Nodejs via apt.
@@ -13,8 +13,8 @@ Installation
 ------------
 
 ```bash
-$ git clone https://github.com/vicb/vagrant-nodejs.git
-$ cd vagrant-nodejs
+$ git clone https://github.com/aterrien/nodejs-devbox.git
+$ cd nodejs-devbox
 $ vagrant up
 ```
 
