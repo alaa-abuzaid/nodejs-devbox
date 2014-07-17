@@ -21,6 +21,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     apt-get install nodejs -y --force-yes
     apt-get install npm -y --force-yes
+
+    apt-get install nodejs-legacy  -y --force-yes
     
     # node /vagrant/opt/hello/server.js
   shell

@@ -27,6 +27,6 @@ $ vagrant ssh
 Start a default server
 ------------
 ```bash
-$ node /opt/hello/server.js
+$ node /vagrant/opt/hello/server.js
 ```
 
