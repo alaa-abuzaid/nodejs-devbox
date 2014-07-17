@@ -1,7 +1,7 @@
 Nodejs devbox
 ================
 
-Ubuntu Precise box simply installing Nodejs via apt.
+Basic Ubuntu Trusty Tahr box with nodejs.
 
 Requirements
 ------------
